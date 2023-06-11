@@ -43,67 +43,7 @@ HTMLWidgets.widget({
           })
         );
 
-        series.data.setAll([
-          {
-            name: "First",
-            children: [
-              {
-                name: "A1",
-                children: [
-                  {
-                    name: "A1-1",
-                    value: 10
-                  },
-                  {
-                    name: "A1-2",
-                    value: 30,
-                    link: ["A2-3"]
-                  },
-                  {
-                    name: "A1-3",
-                    value: 20,
-                    link: ["A3-2"]
-                  }
-                ]
-              },
-              {
-                name: "A2",
-                children: [
-                  {
-                    name: "A2-1",
-                    value: 40,
-                    link: ["A3-3"]
-                  },
-                  {
-                    name: "A2-2",
-                    value: 30
-                  },
-                  {
-                    name: "A2-3",
-                    value: 10
-                  }
-                ]
-              },
-              {
-                name: "A3",
-                children: [
-                  {
-                    name: "A3-1",
-                    value: 5
-                  },
-                  {
-                    name: "A3-2",
-                    value: 20
-                  },
-                  {
-                    name: "A3-3",
-                    value: 20
-                  }
-                ]
-              }
-            ]
-          }
-        ]);
+        series.data.setAll(x.data);
         series.set("selectedDataItem", series.dataItems[0]);
       },
 
